@@ -1,6 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-let port = process.env.PORT || 3002;
+
 
 const app = express();
 app.use(bodyParser.json());
@@ -30,6 +30,8 @@ app.get('/ktx', (req, res) => {
     res.send(noiDung2);
 })
 
-app.listen(port, hostname, () => {
-    console.log(`I'm listening on port ${port}`);
+const port = process.env.PORT || 3002;
+
+app.listen(port, () => {
+  console.log(`I'm listening on port ${port}`);
 });
