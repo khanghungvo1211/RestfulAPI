@@ -17,7 +17,7 @@ const noiDung2 = {
 
 app.get('/', (req, res) => {
     console.log('Sent school information successfully');
-    res.send("hello myfriend");
+    res.send("VoHungKhang_20521440 chao ban");
 })
 
 app.get('/truong', (req, res) => {
